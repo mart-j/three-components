@@ -6,21 +6,19 @@ body {
 
 .component__arrow-wrapper {
     position: relative;
-    
     display: flex;
     justify-content: center;
-   
 }
+
 .component__bell {
     transition: ease-in-out .2s;
 }
 
-
 .component__bell:hover {
     cursor: pointer;
     transform: scale(1.1);
-    
 }
+
 .component__arrow {
     cursor: pointer;
     transition: ease-in-out .2s;
@@ -30,12 +28,12 @@ body {
     transform: scale(1.1);
 }
 
-
 .wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .component__content-wrapper {
     display: flex;
     margin: 32px;
@@ -95,12 +93,10 @@ body {
     color: #0346F2;
 }
 
-
 .component__bell-wrapper {
     padding-right: 32px;
     border-right: 1px solid #E7E9F0;
 }
-
 
 .component__avatar-wrapper {
     margin-left: 32px;
@@ -118,26 +114,15 @@ body {
 
 .component__avatar:hover {
     cursor: pointer;
-    
     transform: scale(1.1);
 }
 
 .component__personal-info {
-    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
-
-
-
-
-
-
-
-
 
 .component {
     display: flex;
@@ -328,4 +313,45 @@ body {
     color: hsl(223, 100%, 26%);
 }
 
-.confirm-button--confirm-cookies {}
+@media only screen and (max-width: 770px) {
+    body {
+        background-color: lightblue;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .component__logo-wrapper {
+        margin: 0;
+    }
+    .component__logo-description {
+        margin: 0;
+    }
+    .component__menu-wrapper {
+        width: fit-content;
+    }
+    .component__navigation {
+        margin: 0;
+    }
+    .component__personal-info {
+        display: flex;
+        justify-content: center;
+    }
+    .component__navigation-item {
+        margin: 0 5px;
+    }
+    .component__logo-wrapper {
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .component__bell-wrapper {
+        padding: 0;
+        border: none;
+    }
+
+    .component__avatar-wrapper{
+        margin-left: 5px;    }
+}
